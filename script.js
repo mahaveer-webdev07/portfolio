@@ -27,3 +27,15 @@ document.getElementById('f').addEventListener('submit', e => {
     const b = encodeURIComponent(document.getElementById('m').value + "\n\nFrom: " + document.getElementById('n').value + " (" + document.getElementById('e').value + ")");
     location.href = "mailto:mahaveerktarvedi@gmail.com?subject=" + encodeURIComponent("Portfolio message from " + document.getElementById('n').value) + "&body=" + b
 });
+
+
+/* ---- v2 additions ---- */
+const rv=[...document.querySelectorAll('h2,.card,.st,.tl>div,.ct>div,.tools,.about>div')];
+rv.forEach((e,i)=>{e.classList.add('rv');e.style.setProperty('--d',(i%3)*90+'ms')});
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.12});
+rv.forEach(e=>ro.observe(e));
+const prog=document.getElementById('prog');
+addEventListener('scroll',()=>{prog.style.transform='scaleX('+(scrollY/(document.documentElement.scrollHeight-innerHeight||1))+')'},{passive:true});
+document.addEventListener('mouseover',e=>{ring.style.width=ring.style.height=e.target.closest('a,button,.tools span')?'44px':'26px'});
+
+document.querySelectorAll('.tools span').forEach((t,i)=>t.style.setProperty('--i',i));

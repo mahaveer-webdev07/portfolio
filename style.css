@@ -606,3 +606,436 @@ button:focus-visible {
         transition: none !important
     }
 }
+
+/* ---- v2 additions ---- */
+#prog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--red2), var(--red));
+    box-shadow: 0 0 10px var(--red);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    z-index: 30
+}
+
+.orb .c {
+    overflow: hidden;
+    background: radial-gradient(circle at 50% 35%, #ff4d6d, #5a0a1c)
+}
+
+.orb .c img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    transition: transform .6s
+}
+
+.orb:hover .c img {
+    transform: scale(1.06)
+}
+
+.soc {
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.soc a.resume {
+    width: auto;
+    height: 38px;
+    padding: 0 18px 0 14px;
+    border-radius: 30px;
+    gap: 8px;
+    display: inline-flex;
+    align-items: center;
+    font-size: .85rem;
+    font-weight: 600;
+    border-color: var(--red);
+    background: rgba(255, 23, 68, .1)
+}
+
+.soc a.resume svg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--red)
+}
+
+.soc a.resume:hover {
+    background: var(--red);
+    box-shadow: 0 0 18px rgba(255, 23, 68, .6)
+}
+
+.soc a.resume:hover svg {
+    stroke: #fff
+}
+
+.proj {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px
+}
+
+.card.pj {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column
+}
+
+.card.pj:hover {
+    transform: translateY(-6px);
+    border-color: var(--a);
+    box-shadow: 0 14px 40px -12px var(--a), 0 0 0 1px var(--a)
+}
+
+.pv {
+    height: 190px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+    background: radial-gradient(circle at 50% 55%, color-mix(in srgb, var(--a) 38%, transparent), transparent 70%), #08030a
+}
+
+.pv img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 18px rgba(0, 0, 0, .6));
+    transition: transform .5s cubic-bezier(.2, .8, .2, 1)
+}
+
+.card.pj:hover .pv img {
+    transform: scale(1.14) rotate(-3deg)
+}
+
+.pb {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+.pb p {
+    flex: 1
+}
+
+.tg span {
+    color: var(--text);
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid var(--line)
+}
+
+.lk {
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.b {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: .82rem;
+    border: 1px solid var(--line);
+    color: var(--text);
+    transition: .25s
+}
+
+.b.p {
+    background: var(--red);
+    border-color: var(--red);
+    box-shadow: 0 0 16px rgba(255, 23, 68, .4)
+}
+
+.b:hover {
+    transform: translateY(-2px);
+    border-color: var(--red);
+    box-shadow: 0 0 20px rgba(255, 23, 68, .5);
+    color: #fff
+}
+
+.rv {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity .7s ease, transform .7s cubic-bezier(.2, .8, .2, 1);
+    transition-delay: var(--d, 0ms)
+}
+
+.rv.in {
+    opacity: 1;
+    transform: none
+}
+
+.card.pj.rv.in {
+    transition: opacity .7s ease var(--d, 0ms), transform .35s ease, border-color .3s, box-shadow .3s
+}
+
+section {
+    min-height: auto
+}
+
+#home {
+    min-height: 100vh
+}
+
+@media(max-width:760px) {
+    .proj {
+        grid-template-columns: 1fr
+    }
+
+    .pv {
+        height: 160px
+    }
+
+    #home {
+        text-align: center;
+        justify-content: center
+    }
+
+    .lead {
+        margin-inline: auto
+    }
+
+    .soc {
+        justify-content: center
+    }
+
+    .orb {
+        order: -1
+    }
+}
+
+.pv img {
+    width: 150px;
+    height: 150px
+}
+
+.orb {
+    width: min(350px, 78vw)
+}
+
+/* ---- v3: project card buttons (Live Demo + GitHub Repository) ---- */
+.lk {
+    gap: 12px
+}
+
+.b svg {
+    width: 15px;
+    height: 15px;
+    flex: none;
+    transition: transform .25s
+}
+
+.b.live svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round
+}
+
+.b.live:hover svg {
+    transform: translate(2px, -2px)
+}
+
+.b.g {
+    background: rgba(255, 255, 255, .04);
+    color: var(--text)
+}
+
+.b.g svg.gh {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    stroke: none
+}
+
+.b.g:hover {
+    background: rgba(255, 255, 255, .1);
+    border-color: var(--red);
+    box-shadow: 0 0 20px rgba(255, 23, 68, .35)
+}
+
+.b.g:hover svg.gh {
+    transform: scale(1.15) rotate(-6deg)
+}
+
+.b:focus-visible {
+    outline: 2px solid var(--red);
+    outline-offset: 3px
+}
+
+@media(max-width:420px) {
+    .lk .b {
+        flex: 1 1 auto;
+        justify-content: center
+    }
+}
+
+/* ---- v4: tools chips + extra polish (additive, nothing removed) ---- */
+.tools span {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    transition: transform .3s cubic-bezier(.2, .8, .2, 1), color .3s, border-color .3s, background .3s, box-shadow .3s
+}
+
+.tools span::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, .22) 50%, transparent 70%);
+    transform: translateX(-130%);
+    pointer-events: none
+}
+
+.tools span:hover {
+    transform: translateY(-4px) scale(1.07);
+    color: #fff;
+    border-color: var(--red);
+    background: rgba(255, 23, 68, .14);
+    box-shadow: 0 10px 22px -8px rgba(255, 23, 68, .7), 0 0 16px rgba(255, 23, 68, .35)
+}
+
+.tools span:hover::before {
+    transform: translateX(130%);
+    transition: transform .7s ease
+}
+
+.tools.in span {
+    animation: chipIn .55s cubic-bezier(.2, .8, .2, 1) backwards;
+    animation-delay: calc(var(--i, 0)*70ms + 250ms)
+}
+
+@keyframes chipIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px) scale(.85)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+/* skill rows */
+.sk {
+    transition: transform .3s cubic-bezier(.2, .8, .2, 1)
+}
+
+.sk:hover {
+    transform: translateY(-3px)
+}
+
+.sk span {
+    transition: color .3s
+}
+
+.sk em {
+    transition: color .3s, text-shadow .3s
+}
+
+.sk:hover em {
+    color: var(--red);
+    text-shadow: 0 0 12px rgba(255, 23, 68, .6)
+}
+
+.sk:hover .bar i {
+    box-shadow: 0 0 20px var(--red)
+}
+
+.bar i {
+    position: relative;
+    overflow: hidden
+}
+
+.bar i::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .55), transparent);
+    transform: translateX(-120%);
+    animation: barShine 3.2s ease-in-out 1.8s infinite
+}
+
+@keyframes barShine {
+    0% {
+        transform: translateX(-120%)
+    }
+
+    60%,
+    100% {
+        transform: translateX(320%)
+    }
+}
+
+/* timeline dots: soft pulse ring */
+.tl div::after {
+    content: "";
+    position: absolute;
+    left: -39px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid var(--red);
+    opacity: 0;
+    animation: dotPulse 2.6s ease-out infinite;
+    pointer-events: none
+}
+
+.tl div:nth-child(2)::after {
+    animation-delay: .8s
+}
+
+.tl div:nth-child(3)::after {
+    animation-delay: 1.6s
+}
+
+@keyframes dotPulse {
+    0% {
+        transform: scale(1);
+        opacity: .7
+    }
+
+    100% {
+        transform: scale(2.6);
+        opacity: 0
+    }
+}
+
+/* primary buttons: subtle shine on hover */
+.btn.p,
+.b.p {
+    position: relative;
+    overflow: hidden
+}
+
+.btn.p::after,
+.b.p::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent 35%, rgba(255, 255, 255, .28) 50%, transparent 65%);
+    transform: translateX(-130%);
+    pointer-events: none
+}
+
+.btn.p:hover::after,
+.b.p:hover::after {
+    transform: translateX(130%);
+    transition: transform .7s ease
+}
+
+/* fix: keep hero buttons aligned (overflow:hidden shifts inline-block baseline) */
+.btn {
+    vertical-align: middle
+}

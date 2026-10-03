@@ -1,76 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Mahaveer | Frontend Developer & Designer</title>
-<meta name="description" content="Portfolio of Mahaveer, a Frontend Developer, Frontend Designer and Graphic Designer from Karachi.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Mahaveer | Frontend Developer & Designer</title>
+    <meta name="description"
+        content="Portfolio of Mahaveer, a Frontend Developer, Frontend Designer and Graphic Designer from Karachi.">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%23050004%27/%3E%3Ctext x=%2732%27 y=%2745%27 font-size=%2740%27 font-family=%27Arial%27 font-weight=%27700%27 text-anchor=%27middle%27 fill=%27%23ff1744%27%3EM%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="ring" id="ring"></div>
-<nav><a class="logo" href="#home">Mahaveer<b>.dev</b></a>
-<ul><li><a href="#home" class="on">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#journey">Journey</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+    <div class="ring" id="ring"></div>
+    <div id="prog" aria-hidden="true"></div>
+    <nav><a class="logo" href="#home">Mahaveer<b>.dev</b></a>
+        <ul>
+            <li><a href="#home" class="on">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<section id="home">
-<div>
-<div class="hello">HELLO, I'M</div>
-<h1>Mahaveer</h1>
-<div class="role"><span id="role"></span><i></i></div>
-<p class="lead">I build responsive, interactive web apps with React and design clean visuals that feel good to use. Explore my work below.</p>
-<a class="btn p" href="#projects">View Projects &rarr;</a><a class="btn" href="#contact">Contact Me</a>
-<div class="soc">
-<a href="https://github.com/mahaveer-webdev07" aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-2m12 4v-3c0-1 0-2-1-3 3 0 6-1.500 6-6 0-1-.5-2.500-1.500-3.500.3-1 .3-2.500 0-3.500 0 0-1 0-3 1.500a10 10 0 0 0-5 0C8 2.500 7 2.500 7 2.500c-.3 1-.3 2.500 0 3.500C6 7 5.500 8 5.500 9.500c0 4.500 3 6 6 6-1 1-1 2-1 3v3"/></svg></a>
-<a href="https://linkedin.com/in/mahaveer-tarvedi" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v6M8 7.500v.01M12 17v-6m0 3c0-2 1-3 3-3s2 1.500 2 3v3"/></svg></a>
-<a href="mailto:mahaveerktarvedi@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
-</div></div>
-<div class="orb"><span class="fl"></span><span class="fl"></span><span class="fl"></span><div class="c">M</div></div>
-</section>
+    <section id="home">
+        <div>
+            <div class="hello">HELLO, I'M</div>
+            <h1>Mahaveer</h1>
+            <div class="role"><span id="role"></span><i></i></div>
+            <p class="lead">I build responsive, interactive web apps with React and design clean visuals that feel good
+                to use. Explore my work below.</p>
+            <a class="btn p" href="#projects">View Projects &rarr;</a><a class="btn" href="#contact">Contact Me</a>
+            <div class="soc">
+                <a href="https://github.com/mahaveer-webdev07" aria-label="GitHub" target="_blank" rel="noopener"><svg
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M9 19c-4 1-4-2-6-2m12 4v-3c0-1 0-2-1-3 3 0 6-1.500 6-6 0-1-.5-2.500-1.500-3.500.3-1 .3-2.500 0-3.500 0 0-1 0-3 1.500a10 10 0 0 0-5 0C8 2.500 7 2.500 7 2.500c-.3 1-.3 2.500 0 3.500C6 7 5.500 8 5.500 9.500c0 4.500 3 6 6 6-1 1-1 2-1 3v3" />
+                    </svg></a>
+                <a href="https://linkedin.com/in/mahaveer-tarvedi" aria-label="LinkedIn" target="_blank"
+                    rel="noopener"><svg viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M8 11v6M8 7.500v.01M12 17v-6m0 3c0-2 1-3 3-3s2 1.500 2 3v3" />
+                    </svg></a>
+                <a href="mailto:mahaveerktarvedi@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24">
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <path d="m3 7 9 6 9-6" />
+                    </svg></a>
+                <a class="resume" href="assets/Mahaveer_Resume.pdf" target="_blank" rel="noopener"><svg
+                        viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 13h6M9 17h6" />
+                    </svg>Resume</a>
+            </div>
+        </div>
+        <div class="orb"><span class="fl"></span><span class="fl"></span><span class="fl"></span>
+            <div class="c"><img src="assets/mahaveer.webp" alt="Portrait of Mahaveer" width="400" height="400"
+                    fetchpriority="high"></div>
+        </div>
+    </section>
 
-<section id="about"><h2>About <span>Me</span></h2>
-<div class="about"><div>
-<p>I'm an entry-level Frontend Developer and Designer from Karachi. I build responsive web apps with HTML, CSS, JavaScript and React, using routing, Context API and browser storage to make them feel complete.</p>
-<p>Alongside code, I work in graphic design, Canva and video editing, so I care about how an interface looks as much as how it works. I'm studying Computer Science and an IT Software Engineering diploma, and looking for an entry-level role.</p></div>
-<div class="stats">
-<div class="st"><b data-n="1">0</b><small>Live Project</small></div>
-<div class="st"><b data-n="3">0</b><small>Languages Spoken</small></div>
-<div class="st"><b data-n="2">0</b><small>Programs Studying</small></div>
-<div class="st"><b data-n="6">0</b><small>Dev Tools Used</small></div>
-</div></div></section>
+    <section id="about">
+        <h2>About <span>Me</span></h2>
+        <div class="about">
+            <div>
+                <p>I'm an entry-level Frontend Developer and Designer from Karachi. I build responsive web apps with
+                    HTML, CSS, JavaScript and React, using routing, Context API and browser storage to make them feel
+                    complete.</p>
+                <p>Alongside code, I work in graphic design, Canva and video editing, so I care about how an interface
+                    looks as much as how it works. I'm studying Computer Science and an IT Software Engineering diploma,
+                    and looking for an entry-level role.</p>
+            </div>
+            <div class="stats">
+                <div class="st"><b data-n="5">4</b><small>Projects Built</small></div>
+                <div class="st"><b data-n="3">3</b><small>Languages Spoken</small></div>
+                <div class="st"><b data-n="2">2</b><small>Programs Studying</small></div>
+                <div class="st"><b data-n="6">6</b><small>Dev Tools Used</small></div>
+            </div>
+        </div>
+    </section>
 
-<section id="skills"><h2>My <span>Skills</span></h2>
-<div class="skills" id="sk"></div>
-<div class="tools"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Vite</span><span>npm</span><span>Canva</span><span>CapCut</span><span>SEO Basics</span><span>MS Office</span></div></section>
+    <section id="skills">
+        <h2>My <span>Skills</span></h2>
+        <div class="skills" id="sk"></div>
+        <div class="tools"><span>Git</span><span>GitHub</span><span>VS
+                Code</span><span>Vite</span><span>npm</span><span>Canva</span><span>CapCut</span><span>SEO
+                Basics</span><span>MS Office</span></div>
+    </section>
 
-<section id="projects"><h2>My <span>Projects</span></h2>
-<div class="proj">
-<div class="card"><div class="ic">$</div><h3>Outlay: Student Expense Tracker</h3>
-<p>A responsive budget planner for students with expense tracking, spending analytics, savings goals and a 50/30/20 budget calculator. Includes search, dark/light theme, local data persistence and a sign-in flow.</p>
-<div class="tg"><span>React</span><span>React Router</span><span>Context API</span><span>Vite</span><span>localStorage</span></div>
-<div class="lk"><a href="https://github.com/mahaveer-webdev07/budget-basics" target="_blank" rel="noopener">Code</a><a href="https://mahaveer-webdev07.github.io/budget-basics/" target="_blank" rel="noopener">Live Demo</a></div></div>
-<div class="card soon"><div><div class="ic" style="margin:0 auto 14px">+</div><h3>More coming soon</h3><p>New projects will land here as I build them.</p></div></div>
-</div></section>
+    <section id="projects">
+        <h2>My <span>Projects</span></h2>
+        <div class="proj">
+            <article class="card pj" style="--a:#ff7a1a">
+                <div class="pv"><img src="assets/outlay.webp" alt="Outlay logo" width="240" height="240" loading="lazy">
+                </div>
+                <div class="pb">
+                    <h3>Outlay: Student Expense Tracker</h3>
+                    <p>A responsive budget planner for students with expense tracking, spending analytics, savings goals
+                        and a 50/30/20 budget calculator. Includes search, dark/light theme, local data persistence and
+                        a sign-in flow.</p>
+                    <div class="tg"><span>React</span><span>React Router</span><span>Context
+                            API</span><span>Vite</span><span>localStorage</span></div>
+                    <div class="lk"><a class="b p live" href="https://mahaveer-webdev07.github.io/budget-basics/"
+                            target="_blank" rel="noopener" aria-label="Outlay: Student Expense Tracker live demo">Live
+                            Demo <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" />
+                            </svg></a><a class="b g repo" href="https://github.com/mahaveer-webdev07/budget-basics"
+                            target="_blank" rel="noopener"
+                            aria-label="Outlay: Student Expense Tracker GitHub repository"><svg class="gh"
+                                viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>GitHub Repository</a></div>
+                </div>
+            </article>
+            <article class="card pj" style="--a:#a855f7">
+                <div class="pv"><img src="assets/todo.webp" alt="Modern Todo App icon" width="240" height="240"
+                        loading="lazy"></div>
+                <div class="pb">
+                    <h3>Modern Todo App</h3>
+                    <p>A clean task manager with All, Active and Done filters to keep your day organized, wrapped in a
+                        modern, responsive interface.</p>
+                    <div class="tg"><span>Task Filters</span><span>Interactive UI</span><span>Responsive</span></div>
+                    <div class="lk"><a class="b p live" href="https://mahaveer-webdev07.github.io/modern-todo-app/"
+                            target="_blank" rel="noopener" aria-label="Modern Todo App live demo">Live Demo <svg
+                                viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" />
+                            </svg></a><a class="b g repo" href="https://github.com/mahaveer-webdev07/modern-todo-app"
+                            target="_blank" rel="noopener" aria-label="Modern Todo App GitHub repository"><svg
+                                class="gh" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>GitHub Repository</a></div>
+                </div>
+            </article>
+            <article class="card pj" style="--a:#3b82f6">
+                <div class="pv"><img src="assets/notes.webp" alt="Notes App icon" width="240" height="240"
+                        loading="lazy"></div>
+                <div class="pb">
+                    <h3>Notes App</h3>
+                    <p>A browser-based notepad for creating and managing notes, with quick sorting by most recent or A
+                        to Z.</p>
+                    <div class="tg"><span>Notes CRUD</span><span>Sorting</span><span>Responsive</span></div>
+                    <div class="lk"><a class="b p live" href="https://mahaveer-webdev07.github.io/notes-app/"
+                            target="_blank" rel="noopener" aria-label="Notes App live demo">Live Demo <svg
+                                viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" />
+                            </svg></a><a class="b g repo" href="https://github.com/mahaveer-webdev07/notes-app"
+                            target="_blank" rel="noopener" aria-label="Notes App GitHub repository"><svg class="gh"
+                                viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>GitHub Repository</a></div>
+                </div>
+            </article>
+            <article class="card pj" style="--a:#facc15">
+                <div class="pv"><img src="assets/movie.webp" alt="MovieBox logo" width="240" height="240"
+                        loading="lazy"></div>
+                <div class="pb">
+                    <h3>Movie Explorer (MovieBox)</h3>
+                    <p>Discover trending movies, explore details and build your own watchlist. Movie data comes live
+                        from the TMDB API.</p>
+                    <div class="tg"><span>TMDB API</span><span>Watchlist</span><span>Responsive</span></div>
+                    <div class="lk"><a class="b p live" href="https://mahaveer-webdev07.github.io/movie-explorer/"
+                            target="_blank" rel="noopener" aria-label="Movie Explorer (MovieBox) live demo">Live Demo
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" />
+                            </svg></a><a class="b g repo" href="https://github.com/mahaveer-webdev07/movie-explorer"
+                            target="_blank" rel="noopener" aria-label="Movie Explorer (MovieBox) GitHub repository"><svg
+                                class="gh" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>GitHub Repository</a></div>
+                </div>
+            </article>
+        </div>
+    </section>
 
-<section id="journey"><h2>My <span>Journey</span></h2>
-<div class="tl">
-<div><small>2026 - 2029</small><h3>IT Software Engineering Diploma</h3><p>Aptech Garden Center, Karachi. Semester 1 ongoing.</p></div>
-<div><small>Expected 2028</small><h3>Intermediate in Computer Science</h3><p>Government Adamjee Science College, Karachi (Sindh Board).</p></div>
-<div><small>Project-based</small><h3>Built and deployed Outlay</h3><p>Took a React and Vite app from development through GitHub version control to GitHub Pages hosting.</p></div>
-</div></section>
+    <section id="journey">
+        <h2>My <span>Journey</span></h2>
+        <div class="tl">
+            <div><small>2026 - 2029</small>
+                <h3>IT Software Engineering Diploma</h3>
+                <p>Aptech Garden Center, Karachi. Semester 1 ongoing.</p>
+            </div>
+            <div><small>Expected 2028</small>
+                <h3>Intermediate in Computer Science</h3>
+                <p>Government Adamjee Science College, Karachi (Sindh Board).</p>
+            </div>
+            <div><small>Project-based</small>
+                <h3>Built and deployed Outlay</h3>
+                <p>Took a React and Vite app from development through GitHub version control to GitHub Pages hosting.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<section id="contact"><h2>Get In <span>Touch</span></h2>
-<div class="ct"><div>
-<p>Have a project in mind, or want to say hi? My inbox is always open.</p>
-<div class="info">
-<a href="mailto:mahaveerktarvedi@gmail.com"><i>@</i>mahaveerktarvedi@gmail.com</a>
-<a href="https://github.com/mahaveer-webdev07" target="_blank" rel="noopener"><i>&lt;/&gt;</i>github.com/mahaveer-webdev07</a>
-<a href="https://linkedin.com/in/mahaveer-tarvedi" target="_blank" rel="noopener"><i>in</i>linkedin.com/in/mahaveer-tarvedi</a>
-<a><i>&#9679;</i>Karachi, Pakistan</a></div></div>
-<form id="f"><input id="n" placeholder="Your Name" required><input id="e" type="email" placeholder="Your Email" required><textarea id="m" placeholder="Your Message" required></textarea>
-<button class="btn p" type="submit">Send Message &rarr;</button></form></div></section>
-<footer>&copy; 2026 Mahaveer. Built with HTML, CSS and JavaScript.</footer>
+    <section id="contact">
+        <h2>Get In <span>Touch</span></h2>
+        <div class="ct">
+            <div>
+                <p>Have a project in mind, or want to say hi? My inbox is always open.</p>
+                <div class="info">
+                    <a href="mailto:mahaveerktarvedi@gmail.com"><i>@</i>mahaveerktarvedi@gmail.com</a>
+                    <a href="https://github.com/mahaveer-webdev07" target="_blank"
+                        rel="noopener"><i>&lt;/&gt;</i>github.com/mahaveer-webdev07</a>
+                    <a href="https://linkedin.com/in/mahaveer-tarvedi" target="_blank"
+                        rel="noopener"><i>in</i>linkedin.com/in/mahaveer-tarvedi</a>
+                    <a href="assets/Mahaveer_Resume.pdf" target="_blank" rel="noopener"><i>&#8681;</i>View my resume
+                        (PDF)</a>
+                    <a><i>&#9679;</i>Karachi, Pakistan</a>
+                </div>
+            </div>
+            <form id="f"><input id="n" placeholder="Your Name" required><input id="e" type="email"
+                    placeholder="Your Email" required><textarea id="m" placeholder="Your Message" required></textarea>
+                <button class="btn p" type="submit">Send Message &rarr;</button>
+            </form>
+        </div>
+    </section>
+    <footer>&copy; 2026 Mahaveer. Built with HTML, CSS and JavaScript.</footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
